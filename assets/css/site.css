@@ -427,6 +427,7 @@
   .case-body p.case-punch{ color:var(--moss); font-weight:700; font-size:clamp(19px,2.2vw,24px); line-height:1.4; }
   .case-pull{ margin:48px 0; padding:4px 0 4px 28px; border-left:3px solid var(--moss); }
   .case-pull p{ font-family:'Bricolage Grotesque',sans-serif; font-weight:600; color:var(--ink); font-size:clamp(19px,2.2vw,24px); line-height:1.4; }
+  .case-pull cite{ display:block; margin-top:14px; font-style:normal; font-family:'IBM Plex Mono',monospace; font-size:13px; color:var(--ink-faint); }
   .case-list{ display:flex; flex-direction:column; gap:16px; }
   .case-list-item{ display:flex; gap:14px; align-items:flex-start; }
   .case-list-item svg{ flex:none; margin-top:3px; color:var(--moss); }
