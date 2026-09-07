@@ -211,7 +211,7 @@
   .hero-grid{ display:grid; gap:28px; max-width:900px; }
   .hero h1{ font-size:clamp(40px,6.4vw,84px); line-height:0.98; }
   .hero h1 em{ font-style:normal; color:var(--moss); }
-  .hero-sub{ font-size:clamp(17px,1.6vw,20px); color:var(--ink-soft); max-width:600px; line-height:1.6; }
+  .hero-sub{ font-size:clamp(17px,1.6vw,20px); color:var(--ink-soft); max-width:720px; line-height:1.6; white-space:nowrap; }
   .hero-actions{ display:flex; align-items:center; gap:22px; margin-top:8px; flex-wrap:wrap; }
 
   .marquee-wrap{
@@ -436,6 +436,7 @@
     .footer-top{ grid-template-columns:1fr 1fr; row-gap:44px; }
     section{ padding:76px 0; }
     .hero{ padding-top:150px; }
+    .hero-sub{ white-space:normal; }
     .roadmap{ padding:32px 20px 0; }
     .roadmap-line{ left:32px; right:32px; }
     .step-list{ grid-template-columns:1fr; }
@@ -503,7 +504,7 @@
       <div class="hero-grid reveal in">
         <span class="eyebrow">AI systems studio</span>
         <h1>You don't need more <em>AI</em>.</h1>
-        <p class="hero-sub">You need to know what's holding your business back — and what it will take to fix it.</p>
+        <p class="hero-sub">Know what's holding your business back — and what it takes to fix it.</p>
         <div class="hero-actions">
           <a href="#work-with-us" class="btn btn-primary">
             Get in touch
