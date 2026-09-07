@@ -1,23 +1,38 @@
 # Quelx Website
 
-A single-page marketing site for **Quelx**, an AI systems studio. Self-contained
-HTML with inline CSS/JS — no build step, no framework, no external runtime
-dependencies besides Google Fonts.
+A marketing site for **Quelx**, an AI systems studio. Plain HTML/CSS/JS — no
+build step, no framework, no external runtime dependencies besides Google
+Fonts.
 
 ## Structure
 
 ```
-index.html                    Entire site: header, hero, problem statement,
-                               3-step roadmap ("Identify / Develop / Adopt"),
-                               testimonials, stats, case studies, team,
-                               FAQ, final CTA — plus three in-page "routes"
-                               (Terms, Privacy, Work With Us) toggled via
-                               location.hash, no page reload
-assets/favicon.png             Quelx "Q" mark favicon
-assets/img/quelx-logo.png      Quelx logo (header + footer brand mark)
-assets/img/zagwe-chinno.jpg    Team photo, Zagwe Chinno (CEO & Co-Founder)
-robots.txt / sitemap.xml       Basic SEO scaffolding
+index.html                     The main site: header, hero, problem statement,
+                                3-step roadmap ("Identify / Develop / Adopt"),
+                                testimonials, stats, case studies, team,
+                                FAQ, final CTA — plus three in-page "routes"
+                                (Terms, Privacy, Work With Us) toggled via
+                                location.hash, no page reload
+case-studies/
+  modernizing-at-home-care.html  Standalone case study page (real URL, own
+                                  meta/OG tags), linked from the homepage's
+                                  "Home Care" case card
+assets/css/site.css             Shared stylesheet for every page
+assets/js/site.js               Shared behavior: sticky header, mobile menu,
+                                 scroll-reveal, stat count-up, FAQ accordion
+assets/js/home.js               Homepage-only behavior: roadmap stepper, team
+                                 photo upload, Terms/Privacy/Work-With-Us
+                                 hash-routing, the lead-gen form
+assets/favicon.png              Quelx "Q" mark favicon
+assets/img/quelx-logo.png       Quelx logo (header + footer brand mark)
+assets/img/zagwe-chinno.jpg     Team photo, Zagwe Chinno (CEO & Co-Founder)
+robots.txt / sitemap.xml        Basic SEO scaffolding
 ```
+
+Adding another case study: copy `case-studies/modernizing-at-home-care.html`,
+swap the content, and link it from a `case-card` on the homepage — it only
+needs `site.css` and `site.js` (no `home.js`, since the roadmap/photo-upload/
+routing logic there is homepage-specific).
 
 ## Design system
 
