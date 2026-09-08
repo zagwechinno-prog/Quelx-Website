@@ -64,6 +64,7 @@
 
   *,*::before,*::after{ box-sizing:border-box; }
   html{ scroll-behavior:smooth; }
+  #process, #work, #team, #faq, #contact{ scroll-margin-top:96px; }
   body{
     margin:0;
     background:var(--bone);
@@ -187,7 +188,7 @@
   .hero-grid{ display:grid; gap:28px; max-width:900px; }
   .hero h1{ font-size:clamp(40px,6.4vw,84px); line-height:0.98; }
   .hero h1 em{ font-style:normal; color:var(--moss); }
-  .hero-sub{ font-size:clamp(17px,1.6vw,20px); color:var(--ink-soft); max-width:720px; line-height:1.6; white-space:nowrap; }
+  .hero-sub{ font-size:clamp(17px,1.6vw,20px); color:var(--ink-soft); max-width:600px; line-height:1.6; }
   .hero-actions{ display:flex; align-items:center; gap:22px; margin-top:8px; flex-wrap:wrap; }
 
   .marquee-wrap{
@@ -443,7 +444,6 @@
     .footer-top{ grid-template-columns:1fr 1fr; row-gap:44px; }
     section{ padding:76px 0; }
     .hero{ padding-top:150px; }
-    .hero-sub{ white-space:normal; }
     .roadmap{ padding:32px 20px 0; }
     .roadmap-line{ left:32px; right:32px; }
     .step-list{ grid-template-columns:1fr; }
