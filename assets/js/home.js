@@ -132,7 +132,7 @@
       page.el.style.display = 'block';
       page.el.setAttribute('aria-hidden', 'false');
       history.replaceState(null, '', '#' + key);
-      window.scrollTo({top:0, left:0, behavior:'instant'});
+      window.scrollTo(0, 0);
     }
 
     function showMainSite(){
@@ -142,7 +142,7 @@
       header.style.display = '';
       hideAllLegalPages();
       history.replaceState(null, '', location.pathname + location.search);
-      window.scrollTo({top:0, left:0, behavior:'instant'});
+      window.scrollTo(0, 0);
     }
 
     Object.keys(legalPages).forEach(function(key){
